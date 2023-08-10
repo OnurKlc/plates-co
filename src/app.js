@@ -1,3 +1,3 @@
-window.addEventListener('DOMContentLoaded', async () => {
-    // init app
-})
+window.addEventListener("DOMContentLoaded", async () => {
+	// init app
+});

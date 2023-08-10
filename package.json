@@ -1,19 +1,23 @@
 {
-  "name": "plates-co",
-  "version": "1.0.0",
-  "description": "Case study",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OnurKlc/plates-co.git"
-  },
-  "author": "Onur Kilic",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OnurKlc/plates-co/issues"
-  },
-  "homepage": "https://github.com/OnurKlc/plates-co#readme"
+	"name": "plates-co",
+	"version": "1.0.0",
+	"description": "Case study",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx serve ./src",
+		"format": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OnurKlc/plates-co.git"
+	},
+	"author": "Onur Kilic",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OnurKlc/plates-co/issues"
+	},
+	"homepage": "https://github.com/OnurKlc/plates-co#readme",
+	"dependencies": {
+		"prettier": "^3.0.1"
+	}
 }

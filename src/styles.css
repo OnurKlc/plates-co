@@ -1,6 +1,51 @@
+:root {
+  --background-surface: #efefef;
+  --primaryColor: #c8e4b2;
+  --secondaryColor: #9ed2be;
+  --terciaryColor: #7eaa92;
+  --black: #272829;
+}
+
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-surface);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px 3px #0000000d;
+  padding: 0 24px;
+  background: #ffffff;
+}
+
+a.navlink {
+  color: var(--black);
+  padding: 8px;
+  text-decoration: none;
+}
+
+#linkHome {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+
+#linkBasket {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 10px;
 }

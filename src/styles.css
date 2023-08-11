@@ -13,7 +13,7 @@
 
 body {
   padding: 0;
-  margin: 150px 0 0 0;
+  margin: 100px 0 0 0;
   font-family: "Open Sans", sans-serif;
   background-color: var(--background-surface);
 }
@@ -26,7 +26,7 @@ body > header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  height: 150px;
+  height: 100px;
   top: 0;
   box-shadow: 0 2px 8px 3px #0000000d;
   padding: 15px 24px;
@@ -47,7 +47,8 @@ a.navlink {
 }
 
 a.navlink img {
-  height: 120px;
+  height: 70px;
+  width: 70px;
   position: relative;
   z-index: -1;
   aspect-ratio: 1/1;
@@ -58,8 +59,8 @@ a.navlink img {
   width: 30px;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 10px;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

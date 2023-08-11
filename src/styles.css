@@ -3,8 +3,12 @@
   --primaryColor: #c8e4b2;
   --secondaryColor: #9ed2be;
   --terciaryColor: #7eaa92;
+  --success: #27ae60;
   --black: #272829;
   --bannerRed: #e74c3c;
+  --orange: #e55807;
+  --brown: #7e1717;
+  --turquaise: #068da9;
 }
 
 body {
@@ -33,20 +37,18 @@ body > header {
 
 a.navlink {
   color: var(--black);
-  padding: 8px;
+  padding: 8px 16px;
   text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50px;
+  font-size: 28px;
 }
 
 #linkHome {
-  display: block;
-  position: absolute;
-  top: 25px;
   left: 10px;
 }
 
 #linkBasket {
-  display: block;
-  position: absolute;
-  top: 25px;
   right: 10px;
 }

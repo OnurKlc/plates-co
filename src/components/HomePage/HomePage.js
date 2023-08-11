@@ -10,6 +10,7 @@ export default class HomePage extends HTMLElement {
       this,
       "components/HomePage/Home.template.html",
       "components/styles/HomePage.css",
+      { createShadowDom: true },
     );
     this.render();
     window.addEventListener("productschanged", () => {

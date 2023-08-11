@@ -1,4 +1,5 @@
 import { addToBasket } from "../../services/Actions.js";
+import { prepareForRender } from "../helpers/util.js";
 
 export default class ProductCard extends HTMLElement {
   title;
@@ -11,15 +12,8 @@ export default class ProductCard extends HTMLElement {
 
   async connectedCallback() {
     Object.assign(this, JSON.parse(this.dataset.product));
-    const templateString = await this.getTemplate();
-    const { body } = new DOMParser().parseFromString(templateString, "text/html");
-    this.appendChild(body.firstChild);
+    await prepareForRender(this, "components/ProductCard/ProductCard.template.html");
     this.render();
-  }
-
-  async getTemplate() {
-    const response = await fetch("components/ProductCard/ProductCard.template.html");
-    return await response.text();
   }
 
   render() {

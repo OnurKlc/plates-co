@@ -6,4 +6,7 @@ const API = {
   },
 };
 
-export default API;
+export const loadProductData = async () => {
+  const result = await API.fetchCatalogue();
+  app.store.products = [...result];
+};

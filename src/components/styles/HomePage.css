@@ -2,6 +2,9 @@
 
 .home {
   padding: 32px;
+}
+
+.products-container {
   display: flex;
   justify-content: space-evenly;
 }

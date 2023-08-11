@@ -4,7 +4,70 @@
   padding: 32px;
 }
 
+#special-offer-banner {
+  background-color: var(--bannerRed);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+#special-offer-banner p {
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+  line-height: 1.2;
+}
+
 .products-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+#delivery-options {
+  margin-top: 36px;
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+  text-align: center;
+}
+
+#delivery-options p {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#delivery-options p::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: var(--primaryColor);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+li span {
+  font-weight: bold;
+}
+
+li:before {
+  content: "✓ ";
+  color: var(--primaryColor);
+  font-size: 22px;
+  margin-right: 10px;
 }

@@ -12,9 +12,8 @@ button {
 
 .product-card {
   background-color: white;
-  margin-bottom: 16px;
-  padding-bottom: 1px;
-  border-radius: 5px;
+  padding-bottom: 16px;
+  border-radius: 4px;
   max-width: 240px;
 }
 

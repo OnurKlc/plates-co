@@ -1,18 +1,18 @@
 [
   {
-    "product": "Red Plate",
+    "title": "Red Plate",
     "code": "R01",
     "price": "32.95",
     "image": "/red-plate.jpeg"
   },
   {
-    "product": "Green Plate",
+    "title": "Green Plate",
     "code": "G01",
     "price": "24.95",
     "image": "/green-plate.jpeg"
   },
   {
-    "product": "Blue Plate",
+    "title": "Blue Plate",
     "code": "B01",
     "price": "7.95",
     "image": "/blue-plate.jpeg"

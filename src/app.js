@@ -1,10 +1,10 @@
 import API from "./services/API.js";
 import Store from "./services/Store.js";
-
-// Import web components
-import ProductCard from "./components/ProductCard.js";
+import Router from "./services/Router.js";
+import * as WebComponents from "./components/index.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
+  app.router.init();
   API.fetchCatalogue().then((res) => {
     app.store.products = [...res];
   });
@@ -12,3 +12,4 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 window.app = {};
 app.store = Store;
+app.router = Router;

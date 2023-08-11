@@ -11,12 +11,14 @@ export function addToBasket(code) {
   } else {
     app.store.basket[index].amount++;
   }
+  app.store.basket = JSON.parse(JSON.stringify(app.store.basket));
   window.dispatchEvent(new Event("basketchanged"));
 }
 
 export function removeFromBasket(code) {
   const index = app.store.basket.findIndex((el) => el.code === code);
   app.store.basket.splice(index, 1);
+  app.store.basket = JSON.parse(JSON.stringify(app.store.basket));
   window.dispatchEvent(new Event("basketchanged"));
   window.dispatchEvent(new Event("totalchanged"));
 }

@@ -1,4 +1,4 @@
-import { prepareForRender } from "../helpers/util.js";
+import { prepareForRender } from "../_shared/helpers/util.js";
 
 export default class HomePage extends HTMLElement {
   constructor() {
@@ -9,7 +9,7 @@ export default class HomePage extends HTMLElement {
     await prepareForRender(
       this,
       "components/HomePage/Home.template.html",
-      "components/styles/HomePage.css",
+      "components/_shared/styles/HomePage.css",
       { createShadowDom: true },
     );
     this.render();

@@ -1,4 +1,4 @@
-import { prepareForRender } from "../helpers/util.js";
+import { prepareForRender, renderBadge } from "../_shared/helpers/util.js";
 
 export default class BasketPage extends HTMLElement {
   constructor() {
@@ -9,7 +9,7 @@ export default class BasketPage extends HTMLElement {
     await prepareForRender(
       this,
       "components/BasketPage/Basket.template.html",
-      "components/styles/BasketPage.css",
+      "components/_shared/styles/BasketPage.css",
       { createShadowDom: true },
     );
     this.render();
@@ -19,6 +19,7 @@ export default class BasketPage extends HTMLElement {
   }
 
   render() {
+    renderBadge();
     const node = this.root.querySelector("#basketItems");
     node.innerHTML = "";
     if (window.app.store.basket.length) {

@@ -1,4 +1,4 @@
-import { prepareForRender } from "../helpers/util.js";
+import { prepareForRender } from "../_shared/helpers/util.js";
 import { removeFromBasket } from "../../services/Actions.js";
 
 export default class BasketItem extends HTMLElement {

@@ -1,5 +1,5 @@
 import { addToBasket } from "../../services/Actions.js";
-import { prepareForRender } from "../helpers/util.js";
+import { prepareForRender } from "../_shared/helpers/util.js";
 
 export default class ProductCard extends HTMLElement {
   title;

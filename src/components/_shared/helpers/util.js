@@ -20,3 +20,8 @@ export async function prepareForRender(
     scope.appendChild(body.firstChild);
   }
 }
+
+export function renderBadge() {
+  const totalItem = app.store.basket.reduce((acc, item) => item.amount + acc, 0);
+  document.querySelector(".badge").innerHTML = totalItem;
+}

@@ -1,3 +1,5 @@
+import { renderBadge } from "../components/_shared/helpers/util.js";
+
 const Store = {
   products: [],
   basket: [],
@@ -11,6 +13,7 @@ const proxyStore = new Proxy(Store, {
     }
     if (property === "basket") {
       window.dispatchEvent(new Event("basketchanged"));
+      renderBadge();
     }
     return true;
   },

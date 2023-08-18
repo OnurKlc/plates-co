@@ -55,7 +55,10 @@ export default class BasketPage extends HTMLElement {
     scope.root.querySelector("#deliveryCost").textContent = deliveryCost
       ? `$ ${deliveryCost.toFixed(2).toString()}`
       : "Free";
-    scope.root.querySelector("#totalPrice").textContent = `$ ${total.toFixed(2).toString()}`;
+    console.log(total);
+    scope.root.querySelector("#totalPrice").textContent = `$ ${(Math.trunc(total * 100) / 100)
+      .toFixed(2)
+      .toString()}`;
   }
 
   showEmptyBasket() {

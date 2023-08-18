@@ -29,11 +29,11 @@ export default class BasketItem extends HTMLElement {
     if (this.code !== "R01") price = this.price * this.amount;
     else
       price =
-        Math.floor(this.amount / 2) * (this.price / 2) + Math.ceil(this.amount / 2) * this.price;
+        Math.trunc(this.amount / 2) * (this.price / 2) + Math.ceil(this.amount / 2) * this.price;
 
     this.dataset.totalPrice = price.toString();
     window.dispatchEvent(new Event("totalchanged"));
-    return `$ ${price.toFixed(2).toString()}`;
+    return `$ ${(Math.trunc(price * 100) / 100).toFixed(2).toString()}`;
   }
 
   onRemoveClick(code) {
